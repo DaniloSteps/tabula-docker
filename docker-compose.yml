@@ -1,0 +1,9 @@
+version: '3'
+services:
+    jruby:
+        build: .
+        container_name: tabula
+        image: tabula:9.4-jdk
+        ports:
+         - 8080:8080
+        restart: "always"
